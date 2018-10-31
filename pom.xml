@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 2011 RedEngine Ltd, http://www.redengine.co.nz. All rights reserved. -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<parent>
-		<groupId>net.stickycode.parent</groupId>
-		<artifactId>sticky-parent-jar8</artifactId>
-		<version>1.3</version>
-	</parent>
-	<modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.stickycode.parent</groupId>
+    <artifactId>sticky-parent-jar8</artifactId>
+    <version>3.1</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.stickycode.scheduled</groupId>
-	<artifactId>sticky-scheduled-spring4</artifactId>
-	<version>1.2-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>net.stickycode.scheduled</groupId>
+  <artifactId>sticky-scheduled-spring</artifactId>
+  <version>5.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>sticky-scheduled-spring4-1</name>
-	<description>Taking the configuration out of applications, using the same principles that underly dependency injection</description>
+  <name>sticky-scheduled-spring</name>
+  <description>Taking the configuration out of applications, using the same principles that underly dependency injection</description>
 
-	<inceptionYear>2008</inceptionYear>
-	<dependencies>
-		<dependency>
-			<groupId>net.stickycode.scheduled</groupId>
-			<artifactId>sticky-scheduled-tck</artifactId>
-			<version>[1.1,2)</version>
-			<scope>test</scope>
-		</dependency>
+  <inceptionYear>2008</inceptionYear>
 
-		<dependency>
-			<groupId>net.stickycode.configured</groupId>
-			<artifactId>sticky-configured-spring4</artifactId>
-			<version>[1.2,2)</version>
-		</dependency>
-		<dependency>
-			<groupId>net.stickycode.scheduled</groupId>
-			<artifactId>sticky-scheduled</artifactId>
-			<version>[3.5,4)</version>
-		</dependency>
-	</dependencies>
+  <url>https://stickycode.readthedocs.io/en/latest/scheduled/index.html</url>
+
+  <scm>
+    <connection>${git.url}</connection>
+    <developerConnection>${git.url}</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.stickycode.scheduled</groupId>
+      <artifactId>sticky-scheduled-tck</artifactId>
+      <version>[1.1,2)</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>net.stickycode.configured</groupId>
+      <artifactId>sticky-configured-spring</artifactId>
+      <version>[5,6)</version>
+    </dependency>
+    <dependency>
+      <groupId>net.stickycode.scheduled</groupId>
+      <artifactId>sticky-scheduled</artifactId>
+      <version>[3.5,4)</version>
+    </dependency>
+  </dependencies>
 </project>
